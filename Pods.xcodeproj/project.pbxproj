@@ -40,12 +40,12 @@
 		790ACABE197D2C29331F766B4BBC2FBB /* STTabbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STTabbar-umbrella.h"; sourceTree = "<group>"; };
 		849609A408AF1DB108067B0AA5DE615E /* STTabbar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STTabbar.debug.xcconfig; sourceTree = "<group>"; };
 		95FE0C1A782016A8FFCEE7CDC41683CE /* STTabbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = STTabbar.swift; path = STTabbar/Classes/STTabbar.swift; sourceTree = "<group>"; };
-		9C441AD7673080B39BE63D1BE12AA7CF /* Pods-naeem */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-naeem"; path = Pods_naeem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C441AD7673080B39BE63D1BE12AA7CF /* Pods_naeem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_naeem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BDA0C0D055AB95B0E1BC2136D2A2A8D3 /* Pods-naeem-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-naeem-acknowledgements.plist"; sourceTree = "<group>"; };
 		DEB977A5083C905E495BC59694E3DE18 /* STTabbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STTabbar-prefix.pch"; sourceTree = "<group>"; };
 		E9D77BB579D97BE2324814D0CFE7C3B7 /* Pods-naeem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-naeem.debug.xcconfig"; sourceTree = "<group>"; };
-		EE095F1E2C54AE4270812B0D8C6A589B /* STTabbar */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = STTabbar; path = STTabbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE095F1E2C54AE4270812B0D8C6A589B /* STTabbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = STTabbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA103BB855545D3AC709DAF04CA5734B /* STTabbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STTabbar-dummy.m"; sourceTree = "<group>"; };
 		FC4EF43A43D8592F829BA88BDDF9CD80 /* STTabbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = STTabbar.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,8 +129,8 @@
 		7698E15207345B08159B931D18541C88 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C441AD7673080B39BE63D1BE12AA7CF /* Pods-naeem */,
-				EE095F1E2C54AE4270812B0D8C6A589B /* STTabbar */,
+				9C441AD7673080B39BE63D1BE12AA7CF /* Pods_naeem.framework */,
+				EE095F1E2C54AE4270812B0D8C6A589B /* STTabbar.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,7 +141,6 @@
 				95FE0C1A782016A8FFCEE7CDC41683CE /* STTabbar.swift */,
 				21D7509AB9C969E6E9DE4A15C568046A /* Support Files */,
 			);
-			name = STTabbar;
 			path = STTabbar;
 			sourceTree = "<group>";
 		};
@@ -202,7 +201,7 @@
 			);
 			name = "Pods-naeem";
 			productName = Pods_naeem;
-			productReference = 9C441AD7673080B39BE63D1BE12AA7CF /* Pods-naeem */;
+			productReference = 9C441AD7673080B39BE63D1BE12AA7CF /* Pods_naeem.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3597430786C2AE27F70CB9094509BCAF /* STTabbar */ = {
@@ -220,7 +219,7 @@
 			);
 			name = STTabbar;
 			productName = STTabbar;
-			productReference = EE095F1E2C54AE4270812B0D8C6A589B /* STTabbar */;
+			productReference = EE095F1E2C54AE4270812B0D8C6A589B /* STTabbar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
