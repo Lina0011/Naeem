@@ -9,11 +9,18 @@ import Foundation
 
 
 struct Budget {
-    let Budget : String
-    let month : Catagory
-    let expensis : String
-    let remaining : String
-    let TransactionsNum : Int
-    
-  
+    var Budget : Float
+    let month : String
+    var expensis : Float
+    var TransactionsNum : Int
+    var remaining: Float
 }
+    
+   
+
+
+
+    let budget : Budget =
+Budget(Budget: 4500 , month: "ابريل", expensis: 1800, TransactionsNum: 9, remaining: 30
+)
+    

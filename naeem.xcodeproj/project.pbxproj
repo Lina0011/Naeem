@@ -11,12 +11,15 @@
 		3E22258328220DAB0033EC24 /* CatagoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E22258228220DAB0033EC24 /* CatagoryList.swift */; };
 		3E222586282317530033EC24 /* SectionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E222585282317530033EC24 /* SectionLayer.swift */; };
 		3E222588282318300033EC24 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E222587282318300033EC24 /* HomeViewModel.swift */; };
+		3E3D58182837AFC8008F1C7C /* TransactionCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D58172837AFC8008F1C7C /* TransactionCollectionViewModel.swift */; };
+		3E3D581A2837E46B008F1C7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E3D58192837E46B008F1C7C /* GoogleService-Info.plist */; };
 		3E5FFBD82824051C002031B2 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5FFBD72824051C002031B2 /* CircularProgressView.swift */; };
 		3E5FFBDC282431AB002031B2 /* CatagoryChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5FFBDB282431AB002031B2 /* CatagoryChartViewController.swift */; };
 		3E5FFBDF2824343E002031B2 /* Catagories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5FFBDE2824343E002031B2 /* Catagories.swift */; };
 		3E5FFBE2282436DD002031B2 /* CatagoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5FFBE1282436DD002031B2 /* CatagoryCollectionViewCell.swift */; };
 		3E684F042825262A0047A2DA /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E684F032825262A0047A2DA /* OffersViewController.swift */; };
 		3E684F06282534350047A2DA /* UIViewShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E684F05282534350047A2DA /* UIViewShadow.swift */; };
+		3E7A9A32282B3B2100B88627 /* CatagoryCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A9A31282B3B2100B88627 /* CatagoryCollectionViewModel.swift */; };
 		3EA8972D2812EEC600C3B7FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8972C2812EEC600C3B7FB /* AppDelegate.swift */; };
 		3EA8972F2812EEC600C3B7FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8972E2812EEC600C3B7FB /* SceneDelegate.swift */; };
 		3EA897312812EEC600C3B7FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA897302812EEC600C3B7FB /* HomeViewController.swift */; };
@@ -26,6 +29,8 @@
 		3EA897412815894700C3B7FB /* CustomTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA897402815894700C3B7FB /* CustomTabViewController.swift */; };
 		3EA8974328158EAA00C3B7FB /* ConvertUIColorToHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8974228158EAA00C3B7FB /* ConvertUIColorToHex.swift */; };
 		3EA897452815BF3B00C3B7FB /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA897442815BF3B00C3B7FB /* AddViewController.swift */; };
+		3EC545892834E95A00F5E32A /* BudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC545882834E95A00F5E32A /* BudgetView.swift */; };
+		3EC5458C2834E98900F5E32A /* BudgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC5458B2834E98900F5E32A /* BudgetViewModel.swift */; };
 		3EEEE848282761BE005AC359 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEE847282761BE005AC359 /* Transactions.swift */; };
 		3EEEE84A2827673F005AC359 /* CatagoryChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEE8492827673F005AC359 /* CatagoryChartViewModel.swift */; };
 		3EEEE84F28277526005AC359 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEE84E28277526005AC359 /* TransactionsViewController.swift */; };
@@ -40,12 +45,15 @@
 		3E22258228220DAB0033EC24 /* CatagoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoryList.swift; sourceTree = "<group>"; };
 		3E222585282317530033EC24 /* SectionLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionLayer.swift; sourceTree = "<group>"; };
 		3E222587282318300033EC24 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		3E3D58172837AFC8008F1C7C /* TransactionCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCollectionViewModel.swift; sourceTree = "<group>"; };
+		3E3D58192837E46B008F1C7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3E5FFBD72824051C002031B2 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		3E5FFBDB282431AB002031B2 /* CatagoryChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoryChartViewController.swift; sourceTree = "<group>"; };
 		3E5FFBDE2824343E002031B2 /* Catagories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catagories.swift; sourceTree = "<group>"; };
 		3E5FFBE1282436DD002031B2 /* CatagoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		3E684F032825262A0047A2DA /* OffersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
 		3E684F05282534350047A2DA /* UIViewShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewShadow.swift; sourceTree = "<group>"; };
+		3E7A9A31282B3B2100B88627 /* CatagoryCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoryCollectionViewModel.swift; sourceTree = "<group>"; };
 		3EA897292812EEC600C3B7FB /* naeem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = naeem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EA8972C2812EEC600C3B7FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EA8972E2812EEC600C3B7FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +65,8 @@
 		3EA897402815894700C3B7FB /* CustomTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabViewController.swift; sourceTree = "<group>"; };
 		3EA8974228158EAA00C3B7FB /* ConvertUIColorToHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertUIColorToHex.swift; sourceTree = "<group>"; };
 		3EA897442815BF3B00C3B7FB /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		3EC545882834E95A00F5E32A /* BudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetView.swift; sourceTree = "<group>"; };
+		3EC5458B2834E98900F5E32A /* BudgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewModel.swift; sourceTree = "<group>"; };
 		3EEEE847282761BE005AC359 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
 		3EEEE8492827673F005AC359 /* CatagoryChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoryChartViewModel.swift; sourceTree = "<group>"; };
 		3EEEE84E28277526005AC359 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +170,7 @@
 				3E22258028220BE70033EC24 /* Extensions */,
 				3EA897352812EEC700C3B7FB /* Assets.xcassets */,
 				3EA8973A2812EEC700C3B7FB /* Info.plist */,
+				3E3D58192837E46B008F1C7C /* GoogleService-Info.plist */,
 			);
 			path = naeem;
 			sourceTree = "<group>";
@@ -167,6 +178,7 @@
 		3EA897462815CAF100C3B7FB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3EC5458A2834E96D00F5E32A /* Budget */,
 				3EEEE84D28277518005AC359 /* Transactions */,
 				3EEEE84C282774D1005AC359 /* Offers */,
 				3E5FFBE0282436A3002031B2 /* CatagoryChart */,
@@ -185,10 +197,20 @@
 			path = Add;
 			sourceTree = "<group>";
 		};
+		3EC5458A2834E96D00F5E32A /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				3EC545882834E95A00F5E32A /* BudgetView.swift */,
+				3EC5458B2834E98900F5E32A /* BudgetViewModel.swift */,
+			);
+			path = Budget;
+			sourceTree = "<group>";
+		};
 		3EEEE84B282774A4005AC359 /* CatagoryCell */ = {
 			isa = PBXGroup;
 			children = (
 				3E5FFBE1282436DD002031B2 /* CatagoryCollectionViewCell.swift */,
+				3E7A9A31282B3B2100B88627 /* CatagoryCollectionViewModel.swift */,
 			);
 			path = CatagoryCell;
 			sourceTree = "<group>";
@@ -215,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				3EEEE8532827766A005AC359 /* TransactionCollectionViewCell.swift */,
+				3E3D58172837AFC8008F1C7C /* TransactionCollectionViewModel.swift */,
 			);
 			path = TransactionCell;
 			sourceTree = "<group>";
@@ -289,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EA897392812EEC700C3B7FB /* LaunchScreen.storyboard in Resources */,
+				3E3D581A2837E46B008F1C7C /* GoogleService-Info.plist in Resources */,
 				3EA897362812EEC700C3B7FB /* Assets.xcassets in Resources */,
 				3EA897342812EEC600C3B7FB /* Main.storyboard in Resources */,
 			);
@@ -344,10 +368,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EA897312812EEC600C3B7FB /* HomeViewController.swift in Sources */,
+				3EC545892834E95A00F5E32A /* BudgetView.swift in Sources */,
 				3EA897412815894700C3B7FB /* CustomTabViewController.swift in Sources */,
 				3E22257F28220BB30033EC24 /* AddViewModel.swift in Sources */,
 				3E222588282318300033EC24 /* HomeViewModel.swift in Sources */,
 				3E684F042825262A0047A2DA /* OffersViewController.swift in Sources */,
+				3E7A9A32282B3B2100B88627 /* CatagoryCollectionViewModel.swift in Sources */,
 				3E5FFBE2282436DD002031B2 /* CatagoryCollectionViewCell.swift in Sources */,
 				3EEEE84F28277526005AC359 /* TransactionsViewController.swift in Sources */,
 				3E22258328220DAB0033EC24 /* CatagoryList.swift in Sources */,
@@ -361,10 +387,12 @@
 				3EA8974328158EAA00C3B7FB /* ConvertUIColorToHex.swift in Sources */,
 				3EA8972F2812EEC600C3B7FB /* SceneDelegate.swift in Sources */,
 				3E684F06282534350047A2DA /* UIViewShadow.swift in Sources */,
+				3EC5458C2834E98900F5E32A /* BudgetViewModel.swift in Sources */,
 				3E5FFBDC282431AB002031B2 /* CatagoryChartViewController.swift in Sources */,
 				3EEEE84A2827673F005AC359 /* CatagoryChartViewModel.swift in Sources */,
 				3E222586282317530033EC24 /* SectionLayer.swift in Sources */,
 				3E5FFBD82824051C002031B2 /* CircularProgressView.swift in Sources */,
+				3E3D58182837AFC8008F1C7C /* TransactionCollectionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,9 +540,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YL9A4R9U47;
+				DEVELOPMENT_TEAM = 5SFHQ673X8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = naeem/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -522,14 +551,16 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = loole.naeem;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naieem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -544,7 +575,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YL9A4R9U47;
+				DEVELOPMENT_TEAM = 5SFHQ673X8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = naeem/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -552,13 +583,14 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = loole.naeem;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naieem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

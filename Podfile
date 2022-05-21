@@ -7,5 +7,7 @@ target 'naeem' do
 
   # Pods for naeem
   pod 'STTabbar'
-
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Core'
 end

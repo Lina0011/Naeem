@@ -9,9 +9,11 @@ import UIKit
 
 class CatagoryChartViewController: UIViewController,
                                    UICollectionViewDataSource,
-                                    UICollectionViewDelegate ,UICollectionViewDelegateFlowLayout {
+                                    UICollectionViewDelegate ,
+                                   UICollectionViewDelegateFlowLayout {
 
     @IBOutlet var Charts: UICollectionView!
+    
     var viewModel = CatagoryChartViewModel()
     
     override func viewDidLoad() {
@@ -31,7 +33,7 @@ class CatagoryChartViewController: UIViewController,
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CatagoryChart", for: indexPath) as! CatagoryCollectionViewCell
-        cell.config(with: viewModel.cellViewModel(for: indexPath))
+             cell.config(with: viewModel.cellViewModel(for: indexPath))
             return cell
        
         }

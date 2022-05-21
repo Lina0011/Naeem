@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import FirebaseCore
+
+
 
 struct Catagory {
     let img : String
@@ -15,8 +18,12 @@ struct Catagory {
 
 }
 
+
+
 let Catagories : [Catagory] = [
-    Catagory(img: "car", catagoryName: "المواصلات" , percentage: 100.0 , total : 360),
-    Catagory(img: "food" , catagoryName: "المطاعم", percentage: 30.0 , total : 360),
-    Catagory(img: "shop", catagoryName: "التسوق", percentage: 30.0 , total : 360),
+    
+   
+    Catagory(img: "", catagoryName: "المواصلات" , percentage: 100.0 , total : 360),
+    Catagory(img: "" , catagoryName: "المطاعم", percentage: 30.0 , total : 360),
+    Catagory(img: "", catagoryName: "التسوق", percentage: 30.0 , total : 360),
 ]

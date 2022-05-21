@@ -10,15 +10,12 @@ import UIKit
 
 class HomeViewModel{
     
+     var BudgetData : Budget {
+         return budget
+     }
+    
     func addShadow(view: UIView) {
         view.setUpShadow(cornerRadius: 12, shadowColor: UIColor.lightGray.cgColor, shadowOpacity: 0.4)
-        
-
     }
-    
-//    func config(with viewModel: CatagoryCollectionViewModel ){
-//        
-//        
-//    }
 
 }

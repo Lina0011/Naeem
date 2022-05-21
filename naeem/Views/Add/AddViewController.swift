@@ -11,11 +11,14 @@ class AddViewController: UIViewController , UIPickerViewDelegate, UIPickerViewDa
   
     var addViewModel = AddViewModel()
     
+    static var update = false
+    
     @IBOutlet weak var amount: UITextField!
     
     
     @IBAction func amount(_ sender: UITextField) {
-        addViewModel.enteredamount = amount.text ?? "0"
+      
+        addViewModel.enteredamount = (amount.text! as NSString).floatValue
     }
     
     @IBOutlet weak var CatagoryPicker: UIPickerView!
@@ -42,20 +45,29 @@ class AddViewController: UIViewController , UIPickerViewDelegate, UIPickerViewDa
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return addViewModel.CatagoryListData[row]
+        
+        return addViewModel.titleOfRows(rows: row)
+            
     }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return addViewModel.CatagoryListData.count
+        return addViewModel.numberOfRows()
+        
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        addViewModel.pickedCatagory =  addViewModel.CatagoryListData[row]
-    }
-    @IBAction func close(_ sender: Any) {
+        addViewModel.didSelect(row: row)
         
     }
+ 
     
     @IBAction func add(_ sender: Any) {
-        
+       
+        addViewModel.addNewCell()
+        NotificationCenter.default.post(name: Notification.Name("updateTable"), object: nil)
+        dismiss(animated: true, completion: nil)
     }
+    
+    
+   
+    
 }

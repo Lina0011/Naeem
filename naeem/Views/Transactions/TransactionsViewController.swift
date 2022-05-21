@@ -7,37 +7,52 @@
 
 import UIKit
 
-class TransactionsViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate ,UICollectionViewDelegateFlowLayout {
+class TransactionsViewController: UIViewController,
+                                  UICollectionViewDataSource,
+                                    UICollectionViewDelegate ,
+                                  UICollectionViewDelegateFlowLayout {
     
     @IBOutlet var boxView: UIView!
     
     @IBOutlet var Transactions: UICollectionView!
+    
     var viewModel = TransactionsViewModel()
     
 
       
         override func viewDidLoad() {
             super.viewDidLoad()
+            
             Transactions.dataSource = self
             Transactions.delegate = self
             Transactions.collectionViewLayout = UICollectionViewFlowLayout()
             self.view.addSubview(Transactions)
             viewModel.addShadow(view: boxView)
-          
-
+           
+            NotificationCenter.default.addObserver(
+                self,
+                selector: #selector(self.dataChanged),
+                name: Notification.Name("updateTable"),
+                object: nil)
         }
-
+    
+    @objc private func dataChanged(notification: NSNotification){
+        self.Transactions.reloadData()
+    }
+    
+  
         
         func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return viewModel.TransactionsData.count
+  
+            return viewModel.numberOfRows(section: section)
+  
         }
 
+    
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            
-                let model = viewModel.TransactionsData[indexPath.row]
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Transactions", for: indexPath) as! TransactionCollectionViewCell
-                cell.load(with: model)
-                return cell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Transactions", for: indexPath) as! TransactionCollectionViewCell
+             cell.config(with: viewModel.cellViewModel(for: indexPath))
+            return cell
            
             }
         
