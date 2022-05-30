@@ -10,4 +10,5 @@ target 'naeem' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
   pod 'Firebase/Core'
+  pod 'FirebaseDatabase'
 end

@@ -16,19 +16,23 @@ class TransactionsViewController: UIViewController,
     
     @IBOutlet var Transactions: UICollectionView!
     
-    var viewModel = TransactionsViewModel()
+    var viewModel: TransactionsViewModel!
     
 
       
         override func viewDidLoad() {
             super.viewDidLoad()
-            
+            viewModel.didTransactionChanged.bind { isItTrue in
+                if isItTrue {
+                    self.Transactions.reloadData()
+                }
+            }
             Transactions.dataSource = self
             Transactions.delegate = self
             Transactions.collectionViewLayout = UICollectionViewFlowLayout()
             self.view.addSubview(Transactions)
             viewModel.addShadow(view: boxView)
-           
+            viewModel.loadTransactions()
             NotificationCenter.default.addObserver(
                 self,
                 selector: #selector(self.dataChanged),
@@ -37,7 +41,8 @@ class TransactionsViewController: UIViewController,
         }
     
     @objc private func dataChanged(notification: NSNotification){
-        self.Transactions.reloadData()
+        viewModel.loadTransactions()
+        viewModel.rsponder?.didTransactionsCahnged(status: "")
     }
     
   

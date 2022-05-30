@@ -17,6 +17,7 @@ class CatagoryChartViewController: UIViewController,
     var viewModel = CatagoryChartViewModel()
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         Charts.dataSource = self
         Charts.delegate = self

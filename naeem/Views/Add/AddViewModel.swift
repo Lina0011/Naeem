@@ -6,19 +6,19 @@
 //
 
 import Foundation
-import Firebase
-import FirebaseFirestore
- 
+
+
 class AddViewModel {
     
+    var didCatagoryChanged = Dynamic<Bool>(value: false)
     var enteredamount: Float =  0.0
     var pickedCatagory: String = "المطاعم"
-    var doc: DocumentReference!
+    var catagoryList : [Catagory] = []
     
     private var CatagoryListData : [String] {
-        return CatagoryList
+        return catagoryList.compactMap({$0.catagoryName})
     }
-
+    
     func titleOfRows ( rows: Int) -> String{
         CatagoryListData[rows]
     }
@@ -31,27 +31,30 @@ class AddViewModel {
     }
     
     func addNewCell(){
-     
-        doc = Firestore.firestore().document("Transaction/extrans")
+        
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let myString = formatter.string(from: Date())
         let yourDate = formatter.date(from: myString)
         let myStringDate = formatter.string(from: yourDate!)
-//        Transaction(title: "غير معروف",catagory: Catagory(img: "car", catagoryName: pickedCatagory, percentage: nil, total: nil), price: enteredamount, date: myStringDate)
-//        Transactions.insert(newCell, at:0)
-        let newCell: [String: Any] = ["title": "غير معروف" , "catagory" : "jjj" ]
         
-        doc.setData(newCell){(error) in
-            if error != nil {
-                print ("error")
-            }else {
-                print ("saved")
-            }
-        }
+        let catagory = catagoryList.first(where: {$0.catagoryName == pickedCatagory})
+        let transaction = Transaction(
+            userID: "2GJhS1w8CoRPv4jyiJDr", catagoryID: catagory?.catagoryID ?? "1",
+                                      date: myStringDate,
+                                      price: enteredamount ,
+                                      storeName: nil, catagory: catagory)
       
+        APIManager.shared.addTransaction(transaction: transaction)
+    
+    }
+    
+    func load(){
         
-  
+        APIManager.shared.getCatagories { [weak self] catagories in
+            self?.catagoryList = catagories ?? []
+            self?.didCatagoryChanged.value = true
+        }
     }
     
 }

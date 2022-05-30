@@ -9,18 +9,23 @@ import Foundation
 
 
 struct Budget {
-    var Budget : Float
-    let month : String
-    var expensis : Float
-    var TransactionsNum : Int
-    var remaining: Float
+    let amount : Float
+    let date : String?
+}
+
+struct BudgetConfg {
+    let budget : Budget
+    let expensis : Float
+    let numTransactions : Int
+    
+    var remaining : Float{
+        budget.amount - expensis
+    }
+    
+    var progressValue: Float {
+        (expensis / budget.amount )
+    }
 }
     
-   
 
-
-
-    let budget : Budget =
-Budget(Budget: 4500 , month: "ابريل", expensis: 1800, TransactionsNum: 9, remaining: 30
-)
     

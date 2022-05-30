@@ -29,6 +29,12 @@ class AddViewController: UIViewController , UIPickerViewDelegate, UIPickerViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        addViewModel.didCatagoryChanged.bind { [weak self] isTrue in
+            if isTrue {
+                self?.CatagoryPicker.reloadAllComponents()
+            }
+        }
+        
         self.CatagoryPicker.delegate = self
         self.CatagoryPicker.dataSource = self
         
@@ -37,6 +43,15 @@ class AddViewController: UIViewController , UIPickerViewDelegate, UIPickerViewDa
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
                 tap.cancelsTouchesInView = false
                 view.addGestureRecognizer(tap)
+        
+       
+        
+        if addViewModel.catagoryList.count == 0 {
+            self.addViewModel.load()
+
+          
+    
+        }
     }
     
     

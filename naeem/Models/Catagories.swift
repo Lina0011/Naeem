@@ -6,24 +6,16 @@
 //
 
 import UIKit
-import FirebaseCore
 
 
 
-struct Catagory {
+
+struct Catagory: Codable {
+    let catagoryID : String
     let img : String
     let catagoryName : String
-    let percentage : Float?
-    let total : Float?
-
 }
 
 
 
-let Catagories : [Catagory] = [
-    
-   
-    Catagory(img: "", catagoryName: "المواصلات" , percentage: 100.0 , total : 360),
-    Catagory(img: "" , catagoryName: "المطاعم", percentage: 30.0 , total : 360),
-    Catagory(img: "", catagoryName: "التسوق", percentage: 30.0 , total : 360),
-]
+

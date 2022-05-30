@@ -10,15 +10,17 @@ import Foundation
 
 class CatagoryChartViewModel {
     
-   private var CatagoryData : [Catagory] {
-        return Catagories
-    }
+   private var CatagoryData : [Catagory] = []
     
     func numberOfRows ( section: Int) -> Int{
         CatagoryData.count
     }
     func cellViewModel (for index: IndexPath)-> CatagoryCollectionViewModel {
         CatagoryCollectionViewModel(catagories: CatagoryData[index.row])
+    }
+    
+    func updateCatagory(catagoryArr:[Catagory]){
+        CatagoryData = catagoryArr 
     }
     
 }

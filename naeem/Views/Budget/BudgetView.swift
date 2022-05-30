@@ -24,17 +24,17 @@ class BudgetView: UIView {
     
     
 
-    func confg(with BudgetDetails: Budget ){
-        let month = "ابريل"
-        let remainings = BudgetDetails.Budget - BudgetDetails.expensis
-        progressValue = (BudgetDetails.expensis / BudgetDetails.Budget)
-       
+    func confg(with budgetDetails: BudgetConfg ){
+        
+        let month = Date().toMonth(date: Date().currentDate())
+  
         budgetTitle.text = "ميزانية شهر \(month)"
-        budgetInfo.text =
-"انفقت \(BudgetDetails.expensis) من الميزانية \(BudgetDetails.Budget)"
-        remaining.text = "متبقي \(remainings) ريال"
-        numTransactions.text = "\(BudgetDetails.TransactionsNum) عمليات"
-        self.budgetBar.progress = Float(progressValue)
+        
+        budgetInfo.text = "انفقت \(budgetDetails.expensis) من الميزانية \(budgetDetails.budget.amount)"
+        
+        remaining.text = "متبقي \(budgetDetails.remaining) ريال "
+        numTransactions.text = "\(budgetDetails.numTransactions) عمليات"
+        self.budgetBar.progress = Float(budgetDetails.progressValue)
 }
     
     

@@ -19,6 +19,7 @@ class CustomTabViewController: UITabBarController {
             myTabbar.centerButtonActionHandler = {
                 let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                 let vc = storyBoard.instantiateViewController(withIdentifier: "addView") as! AddViewController
+                vc.addViewModel.catagoryList = AppData.shared.mainCatagories
                 self.present(UINavigationController(rootViewController: vc), animated: true, completion: nil)
               
             }

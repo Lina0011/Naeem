@@ -8,25 +8,33 @@
 import UIKit
 
 
-
 class TransactionCollectionViewCell: UICollectionViewCell {
     
+ 
+    var initialLoad = true
+
     
     @IBOutlet var pic: UIImageView!
     @IBOutlet var transDate: UILabel!
     @IBOutlet var transPrice: UILabel!
     @IBOutlet var transCatagory: UILabel!
     @IBOutlet var transName: UILabel!
+     
     
     func config(with viewModel: TransactionCollectionViewModel ){
-        var iconimg = viewModel.Transactions.catagory.img
-        var catagoryName = viewModel.Transactions.catagory.catagoryName
-        iconimg = returnIcon(catagory: catagoryName,icon: iconimg)
-        pic.image = UIImage(imageLiteralResourceName: iconimg)
+    
+      
+
+       
+
+//        var iconimg = viewModel.Transactions
+        var catagoryName = viewModel.Transactions.catagory?.catagoryName
+       
+        pic.image = UIImage(imageLiteralResourceName: viewModel.Transactions.catagory?.img ?? "foodicon")
         transDate.text = "\(self.reurnDate(date: viewModel.Transactions.date))"
         transPrice.text = "\(viewModel.Transactions.price)"
         transCatagory.text = catagoryName
-        transName.text = viewModel.Transactions.title
+        transName.text = viewModel.Transactions.storeName ?? "غير معروف"
     }
     
     func reurnDate  ( date: String) -> String{
@@ -40,28 +48,6 @@ class TransactionCollectionViewCell: UICollectionViewCell {
         let resultDate = formatterPrint.string(from: someDateTime! as Date)
         
         return resultDate
-    }
-    
-    func returnIcon (catagory:String, icon:String) -> String{
-        var iconimg = icon
-        switch catagory {
-             case "المواصلات":
-                 iconimg = "caricon"
-             case "المطاعم":
-                 iconimg = "foodicon"
-             case "السفر والسياحة" :
-                 iconimg = "travelicon"
-             case "التسوق" :
-                 iconimg = "shopicon"
-             case "الترفيه":
-                 iconimg = "funicon"
-             case "الوقود":
-                 iconimg = "fuelicon"
-             default:
-                 iconimg = "unknown"
-             }
-      return iconimg
-        
     }
     
    
