@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E185C85284615CF00F3D62F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E185C84284615CF00F3D62F /* GoogleService-Info.plist */; };
 		3E22257F28220BB30033EC24 /* AddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E22257E28220BB30033EC24 /* AddViewModel.swift */; };
 		3E222586282317530033EC24 /* SectionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E222585282317530033EC24 /* SectionLayer.swift */; };
 		3E222588282318300033EC24 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E222587282318300033EC24 /* HomeViewModel.swift */; };
@@ -16,7 +17,6 @@
 		3E2B84D428425CA000D48825 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2B84D328425CA000D48825 /* LaunchScreenView.swift */; };
 		3E39DA91283EBEE200317659 /* Spending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E39DA90283EBEE200317659 /* Spending.swift */; };
 		3E3D58182837AFC8008F1C7C /* TransactionCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D58172837AFC8008F1C7C /* TransactionCollectionViewModel.swift */; };
-		3E3D581A2837E46B008F1C7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E3D58192837E46B008F1C7C /* GoogleService-Info.plist */; };
 		3E5FFBD82824051C002031B2 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5FFBD72824051C002031B2 /* CircularProgressView.swift */; };
 		3E5FFBDC282431AB002031B2 /* CatagoryChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5FFBDB282431AB002031B2 /* CatagoryChartViewController.swift */; };
 		3E5FFBDF2824343E002031B2 /* Catagories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5FFBDE2824343E002031B2 /* Catagories.swift */; };
@@ -61,6 +61,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E185C84284615CF00F3D62F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3E22257E28220BB30033EC24 /* AddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewModel.swift; sourceTree = "<group>"; };
 		3E222585282317530033EC24 /* SectionLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionLayer.swift; sourceTree = "<group>"; };
 		3E222587282318300033EC24 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -70,7 +71,6 @@
 		3E2B84D328425CA000D48825 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		3E39DA90283EBEE200317659 /* Spending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spending.swift; sourceTree = "<group>"; };
 		3E3D58172837AFC8008F1C7C /* TransactionCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCollectionViewModel.swift; sourceTree = "<group>"; };
-		3E3D58192837E46B008F1C7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3E5FFBD72824051C002031B2 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		3E5FFBDB282431AB002031B2 /* CatagoryChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoryChartViewController.swift; sourceTree = "<group>"; };
 		3E5FFBDE2824343E002031B2 /* Catagories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catagories.swift; sourceTree = "<group>"; };
@@ -262,7 +262,7 @@
 				3ED1BD5E283A3B3100351ECE /* Utlities */,
 				3EA897352812EEC700C3B7FB /* Assets.xcassets */,
 				3EA8973A2812EEC700C3B7FB /* Info.plist */,
-				3E3D58192837E46B008F1C7C /* GoogleService-Info.plist */,
+				3E185C84284615CF00F3D62F /* GoogleService-Info.plist */,
 			);
 			path = naeem;
 			sourceTree = "<group>";
@@ -422,7 +422,7 @@
 			files = (
 				3EA897392812EEC700C3B7FB /* LaunchScreen.storyboard in Resources */,
 				3EC1DF272844A69E00758D38 /* onboarding.storyboard in Resources */,
-				3E3D581A2837E46B008F1C7C /* GoogleService-Info.plist in Resources */,
+				3E185C85284615CF00F3D62F /* GoogleService-Info.plist in Resources */,
 				3EA897362812EEC700C3B7FB /* Assets.xcassets in Resources */,
 				3EA897342812EEC600C3B7FB /* Main.storyboard in Resources */,
 			);

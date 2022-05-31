@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>112658509276-2rukekvq1q9iud67b25h60bqas2bdinv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.112658509276-2rukekvq1q9iud67b25h60bqas2bdinv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCrYqbdDf_2m4wH0JDnFCphrAATdbTQsIc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>112658509276</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.naieem</string>
+	<key>PROJECT_ID</key>
+	<string>naeem-373ce</string>
+	<key>STORAGE_BUCKET</key>
+	<string>naeem-373ce.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:112658509276:ios:7fa72e9e60e8486c117319</string>
+	<key>DATABASE_URL</key>
+	<string>https://naeem-373ce-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
