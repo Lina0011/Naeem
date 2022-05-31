@@ -8,9 +8,16 @@
 import Foundation
 
 
-struct Budget {
+struct Budget: Codable {
+    let userID : String 
     let amount : Float
     let date : String?
+    
+    func dictionary(month_year: String) -> [String: Any]? {
+        var dictionary_ = self.dictionary
+        dictionary_?["month_year"] = month_year
+        return dictionary_
+    }
 }
 
 struct BudgetConfg {

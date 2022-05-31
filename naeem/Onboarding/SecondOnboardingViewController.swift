@@ -15,12 +15,15 @@ class SecondOnboardingViewController: UIViewController {
     
     
    
-    @IBAction func textChanged(_ sender: Any) {
+    @IBAction func editingDidEnd(_ sender: Any) {
         let budget = Float(EnteredBudget.text ?? "")
-        
-        AppData.shared.userBudget = .init(amount: budget ?? 0, date: nil)
+        let userbudget = Budget(userID: "2GJhS1w8CoRPv4jyiJDr", amount: budget ?? 0, date: Date().currentDate())
+        APIManager.shared.addBudget(budget: userbudget)
+        AppData.shared.userBudget = userbudget
         
     }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

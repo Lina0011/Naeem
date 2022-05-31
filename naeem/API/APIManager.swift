@@ -97,7 +97,7 @@ class APIManager {
     func getBudget(completion: @escaping (Budget?)->Void ){
               
         db.collection(Constants.FirebaseNames.budget)
-            .whereField("userId", isEqualTo: "2GJhS1w8CoRPv4jyiJDr")
+            .whereField("userID", isEqualTo: "2GJhS1w8CoRPv4jyiJDr")
             .whereField("month_year", isEqualTo: Date().toMonthYear(date: Date().currentDate()))
             .getDocuments { [self] querysnapshot, error in
             if error != nil {
@@ -109,14 +109,31 @@ class APIManager {
                     completion(nil)
                     return
                 }
-                let firstbudget = querysnapshot.documents.first
-                let budget = Budget(amount:firstbudget?.data()["amount"]  as! Float , date: nil )
-                completion(budget)
+                if let firstbudget = querysnapshot.documents.first {
+                    let budget = Budget(userID: "2GJhS1w8CoRPv4jyiJDr", amount:firstbudget.data()["amount"]  as! Float , date: nil )
+                    completion(budget)
+                }
+             
            
               
                 }
             }
         }
+    
+    
+    func addBudget (budget: Budget) {
+        var ref: DocumentReference? = nil
+        guard let budget = budget.dictionary(month_year: Date().toMonthYear(date: Date().currentDate())) else {
+            return
+        }
+        ref = db.collection(Constants.FirebaseNames.budget).addDocument(data: budget) { err in
+            if let err = err {
+                print("Error adding document: \(err)")
+            } else {
+                print("Document added with ID: \(ref!.documentID)")
+            }
+        }
+    }
     
   
     

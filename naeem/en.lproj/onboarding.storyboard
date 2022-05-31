@@ -95,7 +95,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="textChanged:" destination="vhe-ye-1Kl" eventType="editingChanged" id="F7Z-HS-uOa"/>
+                                    <action selector="editingDidEnd:" destination="vhe-ye-1Kl" eventType="editingDidEnd" id="BX9-b6-71b"/>
                                 </connections>
                             </textField>
                         </subviews>
